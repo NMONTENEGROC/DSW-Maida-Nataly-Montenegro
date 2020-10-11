@@ -1,0 +1,456 @@
+@font-face{
+	font-family: TektonPro;
+	src:url("fonts/TektonPro.otf");
+	src:local('?'),url("fonts/Chaparral.otf");
+}
+
+@media screen and (min-width:180px){
+	body{
+	padding:0;
+	margin:0;
+	background: -moz-linear-gradient(-45deg, #000000 0%, #83c783 50%, #000000 100%);
+	/*background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#000000), color-stop(15%,#83c783), color-stop(33%,#253725),  color-stop(46%,#83c783),color-stop(67%,#253725), color-stop(83%,#83c783), color-stop(100%,#000000));*/ 
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#000000), color-stop(50%,#83c783),color-stop(100%,#000000)); 
+	background-attachment:fixed; 
+	background-size:100% 100%;
+	repeat:no-repeat;
+}
+
+#header{
+	width:100%;
+	height:15%;
+	margin-top: .7%;
+	padding:0;	
+	position:fixed;
+	background:#000000;
+	z-index: 4;
+}
+
+#nombre_aplicacion{
+	width:80%;
+	height:10%;
+	margin-left: 20%;
+	background-color: #000;
+	position: fixed;
+	margin-top: 1%;
+	color: #fff;
+	text-align: center;
+	z-index: 8;
+	font-size: .8em;
+	font-style:oblique;
+	font-weight: bold;
+	font-family: TektonPro, Lucida Calligraphy, Calibri;
+}
+
+#reloj{
+	font-size: .7em;
+	margin-top: 5%;
+	margin-left:3.4%;
+	background-color: #000;
+	z-index: 12;
+	position: fixed;
+	border:none;
+	font-family:TektonPro, Lucida Calligraphy, Calibri ;
+	font-style: oblique;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: -.4px;
+	width: 25%;
+}
+#barra_navegacion{
+	width:100%;
+	height:90%;
+	border-right:2px solid #ac9666;
+	border-left:2px solid #ac9666;
+	z-index: 7;
+	position: fixed;
+	margin-top: 16.9%;
+	background-color: #fff;
+	padding-top: 2%;
+}
+
+
+}
+
+@media screen and (min-width:400px){
+
+#nombre_aplicacion{
+	font-size: .9em;
+}
+#reloj{
+	font-size: .8em;
+}
+}
+
+@media screen and (min-width:767px){
+#logo_entidad{
+	width: 6.3%;
+	height: 17%;
+	margin-left:  14.8%;
+	margin-top: -0.8%;
+	position: fixed;
+	z-index: 6;
+	padding: 2px;
+	background-image: url(../images/Escudo_Boyaca2.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+#lad_iz_Lef{	
+		height: 18.3%;
+		width:2.5%;
+		transform-style: preserve-3d;
+    	transform: perspective(700px) rotateX(-16deg) rotateY(-66deg);
+		margin-left:  14%;
+		margin-top: -.6%;
+		box-shadow: 5px 5px 5px #333;
+		-webkit-box-shadow: 5px 5px 5px #333;
+		-moz-box-shadow: 5px 5px 5px #333;
+		-moz-transform-style: preserve-3d;
+		-moz-transform: perspective(700px) rotateX(-16deg) rotateY(-66deg);
+		-webkit-transform-style: preserve-3d;
+		-webkit-transform: perspective(800px) rotateX(-16deg) rotateY(-66deg);
+		}
+#lad_iz_Rig{		
+		height: 18.3%;
+		width:2.3%;
+		transform-style: preserve-3d;
+    	transform: perspective(700px) rotateX(-16deg) rotateY(-66deg);
+		margin-left:  19.9%;
+		margin-top: -.5%;
+		box-shadow: 5px 5px 5px #333;
+		-webkit-box-shadow: 5px 5px 5px #333;
+		-moz-box-shadow: 5px 5px 5px #333;
+		-moz-transform-style: preserve-3d;
+		-moz-transform: perspective(700px) rotateX(-16deg) rotateY(-66deg);
+		-webkit-transform-style: preserve-3d;
+		-webkit-transform: perspective(800px) rotateX(-16deg) rotateY(66deg);
+}
+
+#logo_aplicacion{
+	width: 6.6%;
+	height: 17%;
+	margin-left: 78.8%;
+	margin-top: -.77%;
+	position: fixed;
+	z-index: 6;
+}
+#lad_de_Lef{		
+		height: 18.3%;
+		width:2.5%;
+		transform-style: preserve-3d;
+    	transform: perspective(700px) rotateX(-16deg) rotateY(-66deg);
+		margin-left:  78%;
+		margin-top: -.75%;
+		box-shadow: 5px 5px 5px #333;
+		-webkit-box-shadow: 5px 5px 5px #333;
+		-moz-box-shadow: 5px 5px 5px #333;
+		-moz-transform-style: preserve-3d;
+		-moz-transform: perspective(700px) rotateX(-16deg) rotateY(-66deg);
+		-webkit-transform-style: preserve-3d;
+		-webkit-transform: perspective(800px) rotateX(-16deg) rotateY(-66deg);
+}
+#lad_de_Rig{
+		height: 18.3%;
+		width:2.5%;
+		transform-style: preserve-3d;
+    	transform: perspective(700px) rotateX(16deg) rotateY(66deg);
+		margin-left:  83.7%;
+		margin-top: -.77%;
+		box-shadow: 5px 5px 5px #333;
+		-webkit-box-shadow: 5px 5px 5px #333;
+		-moz-box-shadow: 5px 5px 5px #333;
+		-moz-transform-style: preserve-3d;
+		-moz-transform: perspective(700px) rotateX(16deg) rotateY(66deg);
+		-webkit-transform-style: preserve-3d;
+		-webkit-transform: perspective(700px) rotateX(16deg) rotateY(-66deg);
+}
+#lad_de_Rig,#lad_de_Lef,#lad_iz_Rig,#lad_iz_Lef,#logo_entidad,#logo_aplicacion{
+		position:fixed;
+		background-color: #373837;	
+		border: #ac9666 2px solid;
+	}
+	#lad_de_Rig,#lad_de_Lef,#lad_iz_Rig,#lad_iz_Lef{
+			z-index:5;
+	}
+	
+#nombre_aplicacion{
+	width:50%;
+	margin-left: 25%;
+	margin-top: 1%;
+	font-size: 1em;
+}
+
+#reloj{
+	margin-top: 2%;
+	margin-left:3.4%;
+	width: 8.9%;
+}
+
+#area_trabajo{
+	width:100%;
+	height:88.7%;
+	z-index: 1;
+	background-color: #fff;	
+	margin-top: 7.6%;
+	position: fixed;
+	overflow-y: scroll;
+}
+
+
+
+#area_trabajo::-webkit-scrollbar {
+    width: 12px;
+    height: 10px;	
+}
+#area_trabajo::-webkit-scrollbar-thumb{background-color:rgba(0, 0, 0, 0.4);border-radius:5px; height:50px;}
+#area_trabajo::-webkit-scrollbar-thumb:hover{
+    height: 50px;
+    -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.8);	
+}
+#area_trabajo::-moz-scrollbar {
+    width: 10px;
+    height: 10px;	
+}
+#area_trabajo::-moz-scrollbar-thumb{background-color:#000;border-radius:5px; height:50px;}
+#area_trabajo::-moz-scrollbar-thumb:hover{
+    -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.5);	
+}
+#area_trabajo:hover{
+	overflow-y:scroll;
+}
+
+
+#barra_navegacion{
+	width:22.3%;
+	height:100%;
+	border-right:2px solid #ac9666;
+	z-index: 9;
+	position: fixed;
+	margin-top: .3%;
+	background-color: #fff;
+	padding-top: 2%;
+}
+#opciones{
+	width: 4.1%;
+	height:100%;
+	border-right:2px solid #ac9666;
+	border-left:2px solid #ac9666;
+	position: fixed;
+	background-color: #fff;
+	margin-left: 22.4%;
+	z-index: 11;
+	margin-top: .3%;
+	padding-top: 2%;
+}
+
+#imprimir,#ayuda,#informe,#buscar,#elimiar,#modificar,#guardar,#nuevo{
+   width: 3.6%;
+	height: 8.3%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: fixed;
+	z-index: 9;
+	margin: .4%;
+	background-color: #fff;
+	margin-left: .2%;
+}
+
+#imprimir:hover,#ayuda:hover,#informe:hover,#buscar:hover,#elimiar:hover,#modificar:hover,#guardar:hover,#nuevo:hover{
+   width: 3.8%;
+	height: 8.6%;
+	margin-left: .15%;
+	cursor: pointer;
+}
+#nuevo{
+	background-image: url(../images/nuevo.png);
+	margin-top: .1%;
+}
+#guardar{
+	background-image: url(../images/guardar.png);	
+	margin-top: 4.8%;
+}
+#modificar{
+	background-image: url(../images/modificar.png);
+	margin-top: 9.4%;
+}
+
+#elimiar{
+	background-image: url(../images/eliminar.png);
+	margin-top: 14%;
+}
+#buscar{
+	background-image: url(../images/buscar.png);
+	margin-top: 18.6%;
+}
+#informe{
+	background-image: url(../images/informe.png);	
+	margin-top: 23.2%;
+}
+#imprimir{
+	background-image: url(../images/imprimir.png);	
+	margin-top: 27.6%;
+}
+#ayuda{
+	background-image: url(../images/ayuda.png);	
+	margin-top: 31.8%;
+}
+
+#nota_informativa{	
+	height: 5%;
+	position: absolute;
+	z-index: 10;
+	font-family:TektonPro, Lucida Calligraphy, Calibri ;
+	font-size: 20px;
+	font-style: oblique;
+	font-weight: bold;
+	color: #fff;
+	padding: .1% 1% 0% 1%;
+	display: none;	
+	background-color: black;
+	border-radius: 5px;
+	text-align: center;
+	text-shadow: 1px 1px 2px #fff;
+	opacity: .8;
+	box-shadow: 03px 0px 9px #000;
+}
+
+
+#formulario{
+	width: 73.2%;	
+	height:2000px;
+	margin-left: 27.68%;
+	position: absolute;
+	background-color: #fff;
+	z-index: 10;
+}
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:900px){
+#reloj{
+	font-size: .8em;
+	margin-top: 4%;
+	margin-left:3.8%;
+}
+
+}
+
+
+@media screen and (min-width:950px){
+#reloj{
+	margin-top: 5%;
+	margin-left:3.2%;
+}
+#nombre_aplicacion{
+	font-size: 1.5em;
+}
+
+#pie_pagina{
+}
+}
+
+}
+@media screen and (min-width:1100px){
+#reloj{
+	font-size: 1em;
+	margin-top: 5.5%;
+	margin-left:3.4%;
+}
+}
+
+@media screen and (min-width:1200px){
+#reloj{
+	margin-top: 5%;
+	margin-left:3%;
+}
+}
+
+
+
+#mensaje{
+	position: fixed;
+	width: 40%;
+	height: 30%;
+	background-color: white;
+	z-index: 14;
+	margin-left: 30%;
+	margin-top: 10%;
+	border-radius: 8px;
+	border: solid gray 2px;
+	-webkit-box-shadow: 5px 5px 5px #333;
+	-moz-box-shadow: 5px 5px 5px #333;
+	display: none;
+}
+#header_mensaje{
+	position: fixed;
+	width: 40%;
+	height: 5%;
+	background-color: black;
+	z-index: 15;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	text-align: center;
+	font-size: 2em;
+	font-family:TektonPro, Lucida Calligraphy, Calibri ;
+	color: #fff;
+	font-style: oblique;
+	font-weight: bold;
+	border: solid gray 1px;
+	text-shadow: 1px 1px 2px #fff;
+	opacity:.95;
+}
+#mensaje > #imagen{
+	position: fixed;
+	width: 10%;
+	height: 22%;
+	z-index: 15;
+	margin-top: 3%;
+	margin-left: .7%;
+	border: solid gray 1px;
+}
+
+#mensaje > #texto{
+	position: fixed;
+	width: 27.7%;
+	height: 22%;
+	z-index: 15;
+	margin-top: 3%;
+	margin-left: 11.3%;
+	border: solid gray 1px;
+	font-size: 1.2em;
+	font-family:TektonPro, Lucida Calligraphy, Calibri ;
+	color: #000;
+	font-style: oblique;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px gray;
+}
+#cerrar{
+	width: 1.3%;
+	height: 2.7%;
+	z-index: 16;
+	background-color: white;
+	margin-left: 38.3%;
+	position: fixed;
+	color: #000;
+	margin-top: .28%;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 1px 1px .5px gray;
+	border:1px solid gray;
+}
+#cerrar:before{
+	content: 'x';
+	font-family:arial;
+	font-weight: bold;
+}
+#cerrar:hover{
+	cursor: pointer;
+}

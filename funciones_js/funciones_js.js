@@ -1,0 +1,120 @@
+/////////////MENSAJE INFORMATIVO//////
+function mensaje_informativo(mensaje){	
+$('#nota_informativa').empty();
+$('#nota_informativa').css('display','block');
+$("#nota_informativa").append(mensaje);
+$('#nota_informativa').css('margin-left',(event.clientX)+12);
+$('#nota_informativa').css('margin-top',(event.clientY)-29);	
+}
+
+
+/*function mensaje_informativo(mensaje,campo){	
+$("#contenedor_nota_informativa").append('<div id="nota_informativa_'+campo+'"  class="nota_informativa" style="margin-left:'+((event.clientX)+12)+'; margin-top:'+((event.clientY)-29)+'">'+mensaje+'</div>');
+}*/
+
+function cerrar_mensaje(){
+	$('#nota_informativa').css('display','none');	
+	 // $('#nota_informativa').delay(400).hide(100); 
+}
+
+
+////////////////////////RELOJ DIGITAL///////////
+     function Reloj(){ 
+   	Actual = new Date() 
+   	Hora = Actual.getHours() 
+   	Minuto = Actual.getMinutes() 
+   	Segundo = Actual.getSeconds() 
+
+   	Imprimir = Hora + " : " + Minuto + " : " + Segundo 
+   	document.Frm_Reloj.reloj.value = Imprimir
+   	setTimeout("Reloj()",1000) 
+     } 
+
+
+
+
+function procesar_tusuario(combo){
+var valor=document.getElementById(combo).value;
+if (valor==3 || valor==2 || valor==1) {
+	$('.oculto').css('display','block');
+	$('#codigo').css('margin-left','18%');
+	$('#form_ingresar').css('height','29%');
+	$('#conten_ingresar').css('height','35%');
+}
+else {
+	$('.oculto').css('display','none');
+	$('#form_ingresar').css('height','25.5%');
+	$('#conten_ingresar').css('height','30%');
+}
+
+if (valor==1) {
+	$('.institucion').css('display','none');
+	$('#form_ingresar').css('height','25.5%');
+	$('#conten_ingresar').css('height','30%');
+}
+else {
+	$('.institucion').css('display','block');
+	$('#institucion').css('margin-left','18%');
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////// PREGUNTA ELMINAR FORMULARIO////////////
+
+function preguntaE(formulario,nombre,accion){ 
+    if (confirm('¿ESTAS SEGURO DE ELIMINAR EL REGISTRO: '+ nombre +' ?')){ 
+		$('#OPCIONELIMINAR').prop('type','submit');
+       formulario.submit() 
+    } 
+    
+	else{
+	formulario.submit() ;
+	alert("NO SE ELIMINO EL REGISTRO!!");
+	}
+
+}
+
+
+function preguntaM(formulario,nombre){ 
+    if (confirm('¿ESTAS SEGURO DE MODIFICAR EL REGISTRO: '+ nombre +' ?')){ 
+		$('#OPCIONMODIFICAR').prop('type','submit');
+       formulario.submit(); 
+    } 
+	else{
+	formulario.submit() ;
+	alert("NO SE MODIFICO EL REGISTRO!!");
+	}
+}
+
+
+//////////////////////////////////////////////////////////////////////VENTANAS EMERGENTES
+var Cerrar_Emergente_Login
+var Cerrar_Emergente_Registro
+function Cerrar_Emergente_Login(url){  //registrarse
+	window.close("Emergentes");
+	var ventana_secundaria_registro=window.open(url,"Proceso","width=530,height=550,top=90,left=450");
+}
+
+function Emergente_Login_Registro(url){
+	var ventana_secundaria_login=window.open(url,"Emergentes","width=330,height=400,top=150,left=550,max-width=330,max-height=400");
+}
+
+function Cerrar_Emergente_Registro(){
+		window.close("Emergentes");
+		window.close("Proceso");
+}
+
+function Emergente_Consultar(url){
+	var ventana_secundaria_consulta=window.open(url,"Consulta","width=800,height=650,top=5,left=300");
+}
