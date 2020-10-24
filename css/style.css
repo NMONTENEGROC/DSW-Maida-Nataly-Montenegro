@@ -36,6 +36,55 @@
 	background-color: #fff;
 	padding-top: 0.1%;
 }
+#siguenos{
+	width:100%;
+	height:10%;
+	z-index: 8;
+	position: fixed;
+	margin-top: 60%;
+	background-color: #fff;
+	padding-top: 0.1%;
+	text-align: center;
+}
+#FaceBook{
+	width:16%;
+	height:10%;
+	z-index: 7;
+	position: fixed;
+	padding-top: 0.1%;
+	margin-left: 12%;
+	cursor: pointer;
+	background-image: url(../imagenes/Facebook.png);
+	background-repeat: no-repeat;
+	background-size: 78% 94%;
+	background-position: 50% 45%;
+}
+#Twiter{
+	width:16%;
+	height:10%;
+	z-index: 7;
+	position: fixed;
+	padding-top: 0.1%;
+	margin-left: 38%;
+	cursor: pointer;
+	background-image: url(../imagenes/Twiter.png);
+	background-repeat: no-repeat;
+	background-size: 78% 100%;
+	background-position: 50% 45%;
+}
+#Youtube{
+	width:16%;
+	height:10%;
+	z-index: 7;
+	position: fixed;
+	padding-top: 0.1%;
+	margin-left: 63%;
+	cursor: pointer;
+	background-image: url(../imagenes/Youtube.png);
+	background-repeat: no-repeat;
+	background-size: 78% 103%;
+	background-position: 50% 45%;
+}
 #nombre_aplicacion{
 	width:80%;
 	margin-left: 10%;
@@ -187,6 +236,30 @@ text-align: center;
 	z-index: 10;
 }
 
+#textcont{
+	margin-left:3%;
+	margin-right: :15%;
+	margin-top:4%;
+	width: 90%;
+    font-size: 1.2em;
+	text-align:justify;
+	font-family: angsana-new-bold;
+	z-index: 11;
+}
+#imagen-inicial{
+	margin-left:40%;
+	margin-right: :15%;
+	margin-top:-18%;
+	width: 53%;
+	height: 65%;
+	z-index: 12;
+	display: inline-flex;
+	background-image: url(../imagenes/Display-Example.png);
+	background-repeat: no-repeat;
+	background-size: 95% 97%;
+	background-position: 50% 45%;
+}
+
 #titulo{
 	width:50%;
 	margin-left: 22%;
@@ -246,6 +319,56 @@ text-align: center;
 	margin-top: .3%;
 	background-color: #fff;
 	margin-top: 0.1%;
+}
+#siguenos{
+	width:22.2%;
+	height:13%;
+	z-index: 9;
+	position: fixed;
+	margin-top: 33.9%;
+	background-color: #fff;
+	padding-top: 0.1%;
+	text-align: center;
+	display: block;
+}
+#FaceBook{
+	width:6%;
+	height:10%;
+	z-index: 7;
+	position: fixed;
+	padding-top: 0.1%;
+	margin-left: 1%;
+	cursor: pointer;
+	background-image: url(../imagenes/Facebook.png);
+	background-repeat: no-repeat;
+	background-size: 78% 94%;
+	background-position: 50% 45%;
+}
+#Twiter{
+	width:6%;
+	height:10%;
+	z-index: 7;
+	position: fixed;
+	padding-top: 0.1%;
+	margin-left: 8%;
+	cursor: pointer;
+	background-image: url(../imagenes/Twiter.png);
+	background-repeat: no-repeat;
+	background-size: 78% 100%;
+	background-position: 50% 45%;
+}
+#Youtube{
+	width:6%;
+	height:10%;
+	z-index: 7;
+	position: fixed;
+	padding-top: 0.1%;
+	margin-left: 15%;
+	cursor: pointer;
+	background-image: url(../imagenes/Youtube.png);
+	background-repeat: no-repeat;
+	background-size: 78% 103%;
+	background-position: 50% 45%;
 }
 #opciones{
 	width: 4.1%;

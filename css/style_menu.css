@@ -43,7 +43,7 @@ ul, ul ul {
 	padding-left: 7%;
 	border-top: inset 1px #ddd;
 	border-bottom: inset 1px #ddd;
-	font-size: .9em;
+	font-size: .8em;
 }
 
 .menu ul li a, .menu ul li div a {
@@ -238,14 +238,14 @@ background-color: #fff;
 
 
 @media screen and (min-width:500px){
-	.menu > li > a, #salir > a{
+	.menu > li > div > a, .menu > li > a, #salir > a{
 	font-size: .5em;
 	padding-left: 20%;
 	}
 }
 
 @media screen and (min-width:600px){
-	.menu > li > a, #salir > a{
+	.menu > li > div > a,.menu > li > a, #salir > a{
 	font-size: .6em;
 	padding-left: 15%;
 	width: 92%
@@ -257,6 +257,10 @@ background-color: #fff;
 	font-size: .6em;
 	padding-left: 15%;
 	}
+	.menu > li > div > a {
+	font-size: .6em;
+	padding-left: 15%;
+	}
 	.menu ul li a{
 		width: 87%;
 		height: 5%;
@@ -265,7 +269,7 @@ background-color: #fff;
 
 
 @media screen and (min-width:767px){
-.menu > li > a,#salir > a {	
+.menu > li > div > a, .menu > li > a,#salir > a {	
    background-color: #fff;
 	border: inset 1px #fff;
 	font-size: .7em;
@@ -283,6 +287,11 @@ background-color: #fff;
 	padding: .4em 0;
 }
 
+.menu ul > li >div > a{
+	background: #fff;
+	padding: .4em 0;
+}
+
 }
 
 @media screen and (min-width:880px){
@@ -291,7 +300,7 @@ background-color: #fff;
 }
 }
 @media screen and (min-width:950px){
-.menu > li > a , #salir > a{
+.menu > li > div > a ,.menu > li > a , #salir > a{
 	width: 92%;
 	background-color: #fff;
 	border: inset 1px #fff;
@@ -303,7 +312,7 @@ background-color: #fff;
 }
 
 @media screen and (min-width:1010px){
-	.menu > li > a,  #salir > a {
+.menu > li > div > a, .menu > li > a,  #salir > a {
 	font-size: .9em;
 	}
 }
