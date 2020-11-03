@@ -246,12 +246,27 @@ text-align: center;
 	font-family: angsana-new-bold;
 	z-index: 11;
 }
+
 #imagen-inicial{
 	margin-left:40%;
 	margin-right: :15%;
 	margin-top:-18%;
 	width: 53%;
 	height: 65%;
+	z-index: 12;
+	display: inline-flex;
+	background-image: url(../imagenes/Display-Example.png);
+	background-repeat: no-repeat;
+	background-size: 95% 97%;
+	background-position: 50% 45%;
+}
+
+#imagen-display{
+	margin-left:15%;
+	margin-right: :10%;
+	margin-top:0.2%;
+	width: 80%;
+	height: 30%;
 	z-index: 12;
 	display: inline-flex;
 	background-image: url(../imagenes/Display-Example.png);
@@ -405,15 +420,6 @@ text-align: center;
 
 }
 /* Termina Pantalla tamaño grande*/
-
-
-
-
-
-
-
-
-
 
 
 
