@@ -350,11 +350,18 @@ text-align: center;
 	margin-top: 26%;
 	font-family: angsana-new-bold;
 	}
+#mapa{
+	font-family: angsana-new-bold;
+	font-size: 1.3em;
+	color: black;
+	margin-left: 6%;
+	}
 #buscar{
 	margin-top: 3%;
 	width:22.2%;
 	justify-content:center;
 	margin-left: 27%;
+	font-family: angsana-new-bold;	
 }
 #FaceBook{
 	width:6%;
