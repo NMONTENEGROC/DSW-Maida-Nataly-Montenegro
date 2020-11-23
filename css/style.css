@@ -340,11 +340,21 @@ text-align: center;
 	height:13%;
 	z-index: 9;
 	position: fixed;
-	margin-top: 30%;
+	margin-top: 26%;
 	background-color: #fff;
 	padding-top: 0.1%;
 	text-align: center;
 	display: block;
+}
+#foot{
+	margin-top: 26%;
+	font-family: angsana-new-bold;
+	}
+#buscar{
+	margin-top: 3%;
+	width:22.2%;
+	justify-content:center;
+	margin-left: 27%;
 }
 #FaceBook{
 	width:6%;
